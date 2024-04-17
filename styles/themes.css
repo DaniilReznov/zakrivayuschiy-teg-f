@@ -4,3 +4,57 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/* ТЁМНАЯ */
+:root.theme-dark {
+  --background-image: url(../images/background-dark.png);
+  --background-color: #000;
+  --accent-color: #00CC14;
+  --text-shadow: #000;
+  --color-button-text: #00CC14;
+  --contour: #00CC14;
+  --main-body: #FF0000;
+  --sparks: #ff0000;
+  --core:  rgba(256, 0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: url(../images/background-dark.png);
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --text-shadow: #000;
+    --color-button-text: #00CC14;
+    --contour: #00CC14;
+    --main-body: #FF0000;
+    --sparks: #ff0000;
+    --core:  rgba(256, 0, 0, 0);
+  }
+}
+
+/* СВЕТЛАЯ */
+:root.theme-light {
+  --background-image: url(../images/background-light.png);
+  --background-color: #fff;
+  --accent-color: #000;
+  --text-shadow: #fff;
+  --color-button-text: #fff;
+  --contour: #000;
+  --main-body: #FF0000;
+  --sparks: #ff0000;
+  --core:  rgba(256, 0, 0, 0);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(../images/background-light.png);
+    --background-color: #fff;
+    --accent-color: #000;
+    --text-shadow: #fff;
+    --color-button-text: #fff;
+    --contour: #000;
+    --main-body: #FF0000;
+    --sparks: #ff0000;
+    --core:  rgba(256, 0, 0, 0);
+  }
+}

@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --background-image: url(../images/background-light.png);
+  --background-color: #fff;
+  --accent-color: #000;
+  --color-button-text: #fff;
+  --contour: #000;
+  --main-body: #FF0000;
+  --sparks: #ff0000;
+  --core:  rgba(256, 0, 0, 0);
+}
