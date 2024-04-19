@@ -7,7 +7,10 @@
 
 /* ТЁМНАЯ */
 :root.theme-dark {
-  --background-image: url(../images/background-dark.png);
+  --background-image:
+    repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(to bottom, #007f0c .01%, #004306);
   --background-color: #000;
   --accent-color: #00CC14;
   --text-shadow: #000;
@@ -20,7 +23,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-image: url(../images/background-dark.png);
+    --background-image:
+      repeating-linear-gradient(to right, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+      repeating-linear-gradient(to bottom, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+      linear-gradient(to bottom, #007f0c .01%, #004306);
     --background-color: #000;
     --accent-color: #00CC14;
     --text-shadow: #000;
@@ -34,7 +40,10 @@
 
 /* СВЕТЛАЯ */
 :root.theme-light {
-  --background-image: url(../images/background-light.png);
+  --background-image:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
   --background-color: #fff;
   --accent-color: #000;
   --text-shadow: #fff;
@@ -47,7 +56,10 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-image: url(../images/background-light.png);
+    --background-image:
+      repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+      linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
     --background-color: #fff;
     --accent-color: #000;
     --text-shadow: #fff;
