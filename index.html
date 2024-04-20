@@ -17,7 +17,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="#" class="header__title">&lt;/HTML&gt;</a>
+      <a class="header__title">&lt;/HTML&gt;</a>
       <h1 class="header__subtitle">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -310,12 +310,8 @@
           aria-controls="dialog-id" 
           class="button__open-dialog button"
           >
-          <svg
-            class="floppy"
-            width="21" height="21" 
-            viewBox="0 0 21 21"
-            >
-            <use href="svg/floppy.svg#floppy"/>
+          <svg class="floppy" viewBox="0 0 39 39" fill="currentColor">
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
         </button>
@@ -325,16 +321,13 @@
       <div class="dialog__container">
         <div class="dialog__content">
           <svg 
-            class="floppy__image"
-            width="39" height="39"  
-            viewBox="0 0 21 21"
-            >
-            <use href="svg/floppy.svg#floppy"/>
+            class="floppy__image" viewBox="0 0 39 39" fill="currentColor">
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <p class="dialog__text" id="dialog-name">вставьте дискету, чтобы продолжить</p>
         </div>
         <form method="dialog">
-          <button class="dialog__button" type="submit">
+          <button class="dialog__button button" type="submit">
             <span class="button__text">ок</span>
           </button>
         </form>
