@@ -21,7 +21,7 @@
   --sparks: #ff0000;
   --core:  rgba(256, 0, 0, 0);
   --weight_main: 465;
-  --weight_title: 765;
+  --weight_title: 785;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,7 +40,7 @@
     --sparks: #ff0000;
     --core:  rgba(256, 0, 0, 0);
     --weight_main: 465;
-    --weight_title: 765;
+    --weight_title: 785;
   }
 }
 
