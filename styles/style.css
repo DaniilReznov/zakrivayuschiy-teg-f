@@ -24,7 +24,7 @@
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: var(--weight_main);
+  font-variation-settings: 'wght' var(--weight_title, --weight_main);
 }
 
 @supports (font-variation-settings: normal) {
@@ -186,7 +186,7 @@
 .section__title {
   font-family: var(--main-font), sans-serif;
   font-size: var(--font-size);
-  font-variation-settings: var(--weight_title);
+  font-variation-settings: "wght" var(--weight_title, 700);
   line-height: 21.78px;
   color: var(--accent-color);
   margin-left: 10px;
@@ -197,7 +197,7 @@
 .section__text {
   font-size: var(--font-size);
   line-height: 21px;
-  font-weight: var(--weight_main);
+  font-variation-settings: "wght" var(--weight_main, 400);
   color: var(--accent-color);
 }
 
@@ -234,7 +234,6 @@
 }
 
 .like-icon {
-  position: absolute;
   max-height: 36px;
 }
 
@@ -266,12 +265,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 35px;
+  width: 50px;
   height: 38px;
   outline: none;
   border: 2px solid transparent;
   transition: border .3s ease;
-  margin-right: 10px;
+  margin-right: 5px;
+  padding: 0;
 }
 
 .card__icon-button:focus-visible {
@@ -301,10 +301,14 @@
 .button__open-dialog {
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
   background-color: var(--background-color);
-  min-width: 335px;
+  min-width: 340px;
   height: 55px;
   margin-bottom: 103px;
+  padding: 0;
+  justify-content: center;
 }
 
 dialog::backdrop {
@@ -358,7 +362,6 @@ dialog::backdrop {
 .floppy__image {
   width: 39px;
   margin-right: 20px;
-  margin-top: 12px;
   mix-blend-mode: difference;
   color: var(--icon-color);
 }
@@ -368,6 +371,7 @@ dialog::backdrop {
   block-size: 21px;
   mix-blend-mode: difference;
   color: var(--icon-color);
+  margin-right: 10px;
 }
 
 .filter__brightness {
@@ -428,13 +432,13 @@ dialog::backdrop {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 80px;
+    min-height: 85px;
     min-width: 306px;
   }
 
   .floppy {
-    margin-top: 15px;
     margin-bottom: 8px;
+    margin-left: 8px;
     height: 28px;
     width: 28px;
   }
